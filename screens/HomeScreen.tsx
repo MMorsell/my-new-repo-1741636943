@@ -27,6 +27,15 @@ const HomeScreen = () => {
         <Text style={styles.cardTitle}>Recipes</Text>
         <Text style={styles.cardDescription}>Browse and add ingredients to your list</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity 
+        style={styles.card}
+        onPress={() => navigation.navigate('Ingredients')}
+      >
+        <MaterialCommunityIcons name="food-apple-outline" size={32} color="#4CAF50" />
+        <Text style={styles.cardTitle}>Ingredients</Text>
+        <Text style={styles.cardDescription}>Search and add ingredients</Text>
+      </TouchableOpacity>
     </View>
   );
 };

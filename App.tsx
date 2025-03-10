@@ -7,6 +7,7 @@ import HomeScreen from './screens/HomeScreen';
 import GroceryListScreen from './screens/GroceryListScreen';
 import RecipesScreen from './screens/RecipesScreen';
 import RecipeDetailScreen from './screens/RecipeDetailScreen';
+import IngredientsScreen from './screens/IngredientsScreen';
 import { AppProvider } from './context/AppContext';
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +49,11 @@ export default function App() {
               name="RecipeDetail" 
               component={RecipeDetailScreen}
               options={{ title: 'Recipe Details' }}
+            />
+            <Stack.Screen 
+              name="Ingredients" 
+              component={IngredientsScreen}
+              options={{ title: 'Ingredients' }}
             />
           </Stack.Navigator>
         </NavigationContainer>
